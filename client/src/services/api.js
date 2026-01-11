@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://chat-based-personal-fitness-trainer.onrender.com/api',
+  baseURL: 'https://chat-based-personal-fitness-trainer.onrender.com' + '/api',
   headers: {
     'Content-Type': 'application/json'
   }
