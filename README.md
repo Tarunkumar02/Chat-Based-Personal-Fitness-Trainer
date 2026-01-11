@@ -2,8 +2,10 @@
 
 A full-stack MERN application that uses Google Gemini AI to generate personalized workout plans and nutrition tips through a chat interface.
 
-[Loading Page] :
-(client/src/assets/Screenshot 2026-01-12 012555.png)
+Loading Page: 
+
+<img src="client/src/assets/Screenshot%202026-01-12%20012555.png" width="600" />
+
 
 ## ✨ Features
 
