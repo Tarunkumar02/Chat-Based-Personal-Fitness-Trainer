@@ -64,11 +64,6 @@ const Landing = () => {
         </div>
 
         <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            Powered by Google Gemini AI
-          </div>
-
           <h1 className="hero-title">
             Your Personal
             <span className="hero-title-gradient"> AI Fitness Coach</span>
