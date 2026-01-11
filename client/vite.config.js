@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://chat-based-personal-fitness-trainer.onrender.com',
+        target: 'https://chat-based-personal-fitness-trainer.onrender.com/api',
         changeOrigin: true
       }
     }
