@@ -2,7 +2,10 @@
 
 A full-stack MERN application that uses Google Gemini AI to generate personalized workout plans and nutrition tips through a chat interface.
 
-![FitGenie Dashboard](./screenshots/dashboard.png)
+Loading Page: 
+
+<img src="client/src/assets/Screenshot%202026-01-12%20012555.png" width="600" />
+
 
 ## ✨ Features
 
@@ -166,3 +169,4 @@ MIT License - feel free to use this project for your portfolio!
 ---
 
 Built with ❤️ using the MERN stack and Google Gemini AI
+- Tarun Kumar👨‍💻
