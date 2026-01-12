@@ -221,6 +221,72 @@ select {
   min-height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    flex-direction: row;
+    padding: 0.5rem;
+    border-right: none;
+    border-top: 1px solid var(--dark-border);
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  .sidebar-logo {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .nav-link svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 0px;
+  }
+
+  /* Hide profile/logout section on mobile for simplicity, or move to top right of header if needed. 
+     For now, we'll keep it hidden in the nav bar and maybe assume user logs out via profile page 
+     or add a logout button to the nav. 
+     Actually, let's keep the profile section hidden to save space and rely on a logout button elsewhere 
+     or just hide it. The existing specific div for profile overrides flex.
+     Let's hide the bottom section of sidebar.
+  */
+  .sidebar>div:last-child {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-bottom: 80px;
+    /* Space for bottom nav */
+    padding: 1rem;
+    padding-bottom: 6rem;
+  }
+}
+
 /* === Auth Pages === */
 .auth-container {
   min-height: 100vh;
